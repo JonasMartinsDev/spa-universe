@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #E1E1E6;
+
+  --font-family: 'Roboto', sans-serif;
+
+  font-size: 62.5%;
+}
+
+body * {
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+ /* ====== bg  ====== */
+.universe {
+  background: url('./img/mountains-universe02.png');
+}
+
+.exploration {
+  background: url('./img/mountains-universe-3.png');
+}
+
+body.home nav ul a:nth-child(1) {
+ color: #FFF;
+ font-weight: bold;
+}
+body.universe nav ul a:nth-child(2) {
+ color: #FFF;
+ font-weight: bold;
+
+}body.exploration nav ul a:nth-child(3) {
+ color: #FFF;
+ font-weight: bold;
+}
+
+
+body {
+  min-height: 100%;
+  background: url('./img/mountains-universe-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  animation: bg-out 50s infinite;
+}
+
+
+nav {
+  padding: 4rem 0 4rem 7.2rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  gap: 4.2rem;
+}
+
+nav ul  {
+  font-size: clamp(1.4rem, 1rem + 1vw, 2.1rem);
+  line-height: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #c4c4cc;
+}
+
+
+#home {
+  min-height: calc(100vh - 13rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: topdown 2s;
+
+}
+
+#home h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+#home .button {
+  margin-top: 2.4rem;
+  
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  padding: 1.2rem 3.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+#home .button:hover {
+  background: #FFFFFF;
+  color: #02799D;
+}
+
+.content {
+  max-width: 64.8rem;
+  margin: 6.3rem 12rem;
+
+  animation: topdown 2s;
+}
+
+.content h1 {
+  font-size: 4.8rem;
+}
+
+.content p {
+  margin-top: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translate(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+
+@keyframes bg-out {
+  0% {
+    background-size: 200%;
+  }
+
+  50% {
+    background-size: 150%;
+  }
+
+  100% {
+    background-size: 100%;
+  }
+}
