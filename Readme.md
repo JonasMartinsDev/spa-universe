@@ -1,6 +1,6 @@
 # SPA Universe
  
- o desafio era pra criar uma página utiliando os conceitos de SPA (Single Page Application) Aplicação de
+ O desafio era pra criar uma página utiliando os conceitos de SPA (Single Page Application) Aplicação de
  página única.
  Aplicação que ao invés de carregar toda a página ou redirecionar o usuário para uma nova página, apenas o conteúdo da principal é atualizado de forma assíncrona. 
  Matendo a estrutura da página estática.
